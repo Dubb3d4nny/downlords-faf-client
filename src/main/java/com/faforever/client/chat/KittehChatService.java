@@ -910,14 +910,7 @@ public class KittehChatService implements ChatService, InitializingBean, Disposa
 
   @Override
   public void destroy() {
-    close();
-  }
-
-  @Override
-  public void close() {
-    if (client != null) {
-      client.shutdown();
-    }
+    disconnect();
   }
 
   @Override
