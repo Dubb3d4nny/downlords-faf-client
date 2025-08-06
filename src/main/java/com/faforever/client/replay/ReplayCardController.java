@@ -149,9 +149,8 @@ public class ReplayCardController extends VaultEntityCardController<Replay> {
 
     isReplayWatched.bind(replayHistory.watchedReplaysProperty()
                                       .flatMap(watchedReplays -> entity.map(Replay::id).map(watchedReplays::contains))
-                                      .orElse(false));
-
-
+                                      .orElse(false)
+                                      .when(showing));
     isReplayWatched.when(showing).subscribe((value) -> {
       if (value) {
         applyWatchedReplayHighlight();
