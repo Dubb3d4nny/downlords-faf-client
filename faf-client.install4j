@@ -706,15 +706,12 @@ return console.askYesNo(message, true);
     </styles>
   </installerGui>
   <mediaSets>
-    <windows name="Windows" id="26" installDir="${compiler:sys.fullName}" architecture="64">
-      <jreBundle usePack200="false" jreBundleSource="preCreated" includedJre="windows-amd64-25" />
-    </windows>
     <windowsArchive name="Windows Archive" id="330" installDir="faf-client-${compiler:sys.version}" architecture="64">
       <exclude>
         <entry location="lib/faf-ice-adapter" />
         <entry location="lib/faf-uid" />
       </exclude>
-      <jreBundle jreBundleSource="preCreated" includedJre="windows-amd64-21.0.1" />
+      <jreBundle jreBundleSource="preCreated" includedJre="windows-amd64-25" />
     </windowsArchive>
     <unixArchive name="Unix Archive" id="331" installDir="faf-client-${compiler:sys.version}">
       <exclude>
