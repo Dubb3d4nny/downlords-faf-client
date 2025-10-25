@@ -27,7 +27,7 @@ Post a bounty on Issue Hunt. You can reward and financially help developers that
 5. Select `Main` as run configuration next to the hammer button in the top right
 6. Compile and start the application by pressing the play button
 
-A video tutorial is available [here](https://www.youtube.com/watch?v=4Wm-yZpV_q8). Don't forget to `Enable annotation processing`.
+A video tutorial is available [here](https://www.youtube.com/watch?v=4Wm-yZpV_q). Don't forget to `Enable annotation processing`.
 
 ### Linux
 
